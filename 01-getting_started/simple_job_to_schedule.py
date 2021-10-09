@@ -14,6 +14,6 @@ print(result.result)
 
 # enqueue to run the job in 10 seconds
 countdown = 10
-result = q.enqueue_in(timedelta(seconds = countdown), say_hello)
-time.sleep(countdown + 2) # giving 2 seconds buffer for the worker to complete the job
+result = q.enqueue_in(timedelta(seconds=countdown), say_hello)
+time.sleep(countdown + 2)  # giving 2 seconds buffer for the worker to complete the job
 print(result.result)
