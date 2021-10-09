@@ -4,7 +4,7 @@ from rq import Queue
 from datetime import datetime, timedelta
 import time
 
-# start a worker in a terminal to listen to this job using `rq worker`
+# start a worker in a terminal to listen to this job using `rq worker --with-schedule`
 q = Queue(connection=Redis())
 
 # enqueue thhe job to run at October 10, 2021 at 12:04
